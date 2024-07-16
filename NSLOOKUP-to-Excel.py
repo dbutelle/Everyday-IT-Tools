@@ -1,3 +1,7 @@
+#### DODOW62 ####
+#### Version 1.0 ####
+
+
 import subprocess
 import pandas as pd
 import os
@@ -40,16 +44,16 @@ def nslookup_entries_to_excel(entries, output_file):
     # Create a DataFrame and export to Excel
     df = pd.DataFrame(results)
     df.to_excel(output_file, index=False)
-    print(f"Les résultats de NSLookup ont été exportés vers {output_file}")
+    print(f"NSLookup results have been exported to {output_file}")
 
 # Main function to take user input and perform nslookup
 def main():
     current_dir = os.path.dirname(__file__)
     entries = []
-    print("Entrez les adresses IP ou les noms de domaine (entrez 'quit or exit' pour terminer) :")
+    print("Enter IP addresses or domain names (enter 'quit' or 'exit' to finish):")
     while True:
-        entry = input("Adresse IP ou nom de domaine : ")
-        if entry.lower() == 'quit' or entry.lower() == 'exit' :
+        entry = input("IP address or domain name: ")
+        if entry.lower() == 'quit' or entry.lower() == 'exit':
             break
         entries.append(entry)
     
@@ -57,7 +61,7 @@ def main():
         output_file = os.path.join(current_dir, "nslookup_results.xlsx")
         nslookup_entries_to_excel(entries, output_file)
     else:
-        print("Aucune adresse IP ou nom de domaine n'a été saisie.")
+        print("No IP addresses or domain names were entered.")
 
 if __name__ == "__main__":
     main()
