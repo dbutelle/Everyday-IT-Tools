@@ -13,10 +13,6 @@ This tool allows you to perform `nslookup` queries on a list of domains or IP ad
   - Parses the output to extract relevant information such as server, address, and name.
   - Exports the results to an Excel file for easy analysis and record-keeping.
 
-- **Usage:**
-  1. Run the `nslookup_entries_to_excel` function with a list of domains or IP addresses.
-  2. The results will be saved in an Excel file in the current directory.
-
 ### 2. Ping Tool
 
 Perform a ping to identify active hosts and export the results to an Excel file.
