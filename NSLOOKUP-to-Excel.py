@@ -6,7 +6,6 @@ def nslookup(entry):
     """Function to perform nslookup on an entry (domain or IP) and return the output."""
     try:
         result = subprocess.run(['nslookup', entry], capture_output=True, text=True, check=True)
-        print(result)
         return result.stdout
     except subprocess.CalledProcessError as e:
         return str(e)
