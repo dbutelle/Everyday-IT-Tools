@@ -101,8 +101,6 @@ Script to manage user accounts (create, delete, update) on a system. Generate a 
 
 ## My Tasks
 
-```[tasklist]
-### My tasks
 - [x] NSLookup Tool
 - [x] Ping Tool
 - [ ] Port Scanner
